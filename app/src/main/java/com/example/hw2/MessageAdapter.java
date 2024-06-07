@@ -77,7 +77,7 @@ public class MessageAdapter extends RecyclerView.Adapter<MessageViewHolder> {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(v.getContext(),MessageActivity.class);
-                //intent.putExtra("message",message);
+                intent.putExtra("message",message);
                 ActivityOptionsCompat options = ActivityOptionsCompat.makeSceneTransitionAnimation(
                         (Activity) v.getContext(),
                         holder.Card,
