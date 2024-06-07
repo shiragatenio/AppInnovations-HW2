@@ -1,21 +1,27 @@
 [versions]
-agp = "8.3.2"
+agp = "8.4.1"
+firebaseBom = "33.1.0"
+glide = "4.16.0"
 junit = "4.13.2"
 junitVersion = "1.1.5"
 espressoCore = "3.5.1"
-appcompat = "1.6.1"
+appcompat = "1.7.0"
 material = "1.12.0"
-activity = "1.8.0"
+activity = "1.9.0"
 constraintlayout = "2.1.4"
 googleServices = "4.4.2"
 firebaseAnalytics = "22.0.1"
 firebaseCrashlytics = "19.0.1"
-gradle = "8.1.0"
+gradle = "8.4.1"
 firebaseCrashlyticsGradle = "3.0.1"
 firebaseFirestore = "25.0.0"
 firebaseStorage = "21.0.0"
 
 [libraries]
+firebase-bom = { module = "com.google.firebase:firebase-bom", version.ref = "firebaseBom" }
+glide = { module = "com.github.bumptech.glide:glide", version.ref = "glide" }
+google-firebase-analytics = { module = "com.google.firebase:firebase-analytics" }
+google-firebase-crashlytics = { module = "com.google.firebase:firebase-crashlytics" }
 junit = { group = "junit", name = "junit", version.ref = "junit" }
 ext-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
 espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
